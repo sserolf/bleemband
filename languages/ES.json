@@ -1,0 +1,41 @@
+{
+  "navPage_gigs_link": "CONCIERTOS",
+  "navPage_spotify_link": "SPOTIFY",
+  "navPage_news_link": "NOTICIAS",
+  "navPage_history_link": "HISTORIA",
+  "navPage_contact_link": "CONTACTO",
+  "logo_img": "bleemLogo.png",
+  "gigs_title_text": "CONCIERTOS",
+  "ul_gigs": {
+    "gig4": {
+      "Sala Even": "17 FEBRERO 2023"
+    }
+  },
+  "spotify_title_text": "SPOTIFY",
+  "spotify_iframe": {
+    "style": "border-radius:12px",
+    "src": "https://open.spotify.com/embed/artist/18XAA0r18aNsZtxIt1wAhz?utm_source=generator",
+    "width": "100%",
+    "height": "80",
+    "frameBorder": "0",
+    "allowfullscreen": "",
+    "allow": "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture",
+    "loading": "lazy"
+  },
+  "news_title_text": "NOTICIAS",
+  "news_content": {
+    "web": "20/11/2022 - ESTRENAMOS WEB||Hemos preparado nuestra página web para que podáis estar al tanto de nuestras noticias, lanzamientos y actualizaciones. ¡Esperamos que os guste!" 
+  },
+  "history_title_text": "HISTORIA",
+  "history_content": "BLEEM",
+  "contact_title_text": "CONTACTO",
+  "ul_contact": {
+    "mail2": {
+      "Mail:": "bleemband@gmail.com||mailto:bleemband@gmail.com"
+    },
+    "instagram": {
+      "Instagram:": "@bleemband||https://www.instagram.com/bleemband"
+    }
+  },
+  "copy_text": "Made with love by BLEEM 🖤"
+}
