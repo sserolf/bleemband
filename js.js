@@ -189,20 +189,16 @@ window.onload = () => {
             }
           });
         } else {
-          for (let index = 0; index < value.split('||').length - 1; index++) {
-            let historyContent = document.createElement('p');
-            historyContent.innerText = value.split('||')[index];
-            container.appendChild(historyContent);
-          }
-          const lastValue = value.split('||')[value.split('||').length - 1];
-          if (lastValue && (lastValue.indexOf('jpg') > -1 || lastValue.indexOf('jpeg') > -1 || lastValue.indexOf('png') > -1 || lastValue.indexOf('gif') > -1)) {
-            let historyImg = document.createElement('img');
-            historyImg.src = lastValue;
-            container.appendChild(historyImg);
-          } else {
-            let historyContent = document.createElement('p');
-            historyContent.innerText = lastValue;
-            container.appendChild(historyContent);
+          for (let index = 0; index < value.split('||').length; index++) {
+            if (value.split('||')[index].toLowerCase().indexOf('jpg') > -1 || value.split('||')[index].toLowerCase().indexOf('jpeg') > -1 || value.split('||')[index].toLowerCase().indexOf('png') > -1 || value.split('||')[index].toLowerCase().indexOf('gif') > -1) {
+              let historyImg = document.createElement('img');
+              historyImg.src = value.split('||')[index];
+              container.appendChild(historyImg);
+            } else {
+              let historyContent = document.createElement('p');
+              historyContent.innerText = value.split('||')[index];
+              container.appendChild(historyContent);
+            }
           }
         }
         container.setAttribute('id', contentId + 'Container');
@@ -300,7 +296,7 @@ window.onload = () => {
           const ulPastTitle = document.createElement('li');
           ulPastTitle.classList.add('ulTitle');
           ulPastTitle.innerHTML = language.toLowerCase() == 'es' ? 'Conciertos Anteriores'.toUpperCase() : 'Past Gigs'.toUpperCase();
-          ul.prepend(ulTitle);
+          ul.children.length > 1 ? ul.prepend(ulTitle) : null;
           ulPastGigs.prepend(ulPastTitle);
           document.getElementById(ulId).appendChild(ul);
           ulPastGigs.children.length > 1 ? document.getElementById(ulId).appendChild(ulPastGigs) : null;
