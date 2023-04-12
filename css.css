@@ -390,12 +390,6 @@ html {
   .nav-page-active {
     width: 30%;
   }
-
-  .sections > ul {
-    float: none;
-    margin: 1em auto;
-    width: 50%;
-  }
 }
 
 @keyframes backgroundAnimation
