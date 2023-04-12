@@ -7,8 +7,23 @@
   "logo_img": "bleemLogo.png",
   "gigs_title_text": "GIGS",
   "ul_gigs": {
+    "gig1": {
+      "Sala Even (Sevilla)": "17 FEBRUARY 2023"
+    },
+    "gig2": {
+      "Santiponce (Sevilla)": "18 MARCH 2023"
+    },
+    "gig3": {
+      "Jerez (Cádiz)": "25 MARCH 2023"
+    },
     "gig4": {
-      "Sala Even": "17 FEBRUARY 2023"
+      "Sala Berlín (Cádiz)": "31 MARCH 2023"
+    },
+    "gig5": {
+      "Valencia": "7 MAY 2023"
+    },
+    "gig6": {
+      "A Coruña": "19 MAY 2023"
     }
   },
   "spotify_title_text": "SPOTIFY",
