@@ -363,6 +363,14 @@ html {
   padding: 0 0 10px 0;
 }
 
+#gigsContainer {
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  width: calc(100% - 20px);
+}
+
 #pastGigsContainer {
   width: calc(100% - 20px);
   border-radius: 10px;
