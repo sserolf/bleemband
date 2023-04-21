@@ -224,7 +224,11 @@ window.onload = () => {
       if (key.indexOf('link') > -1) {
         let link = key.split('navPage_')[1].split('_link')[0];
         document.getElementById(key).innerText = value;
-        document.getElementById(key).href = '#' + link.toLowerCase();
+        if (key.indexOf('dossier') > -1) {
+          document.getElementById(key).href = window.location.hostname + '/BLEEM_DOSSIER.pdf';
+        } else {
+          document.getElementById(key).href = '#' + link.toLowerCase();
+        }
       }
 
       if (key.indexOf('text') > -1) {
