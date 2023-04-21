@@ -225,7 +225,7 @@ window.onload = () => {
         let link = key.split('navPage_')[1].split('_link')[0];
         document.getElementById(key).innerText = value;
         if (key.indexOf('dossier') > -1) {
-          document.getElementById(key).href = window.location.hostname + '/BLEEM_DOSSIER.pdf';
+          document.getElementById(key).href = '/BLEEM_DOSSIER.pdf';
         } else {
           document.getElementById(key).href = '#' + link.toLowerCase();
         }
