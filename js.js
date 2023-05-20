@@ -278,7 +278,8 @@ window.onload = () => {
               span2.classList.add('rightGig');
               if (new Date(value1) < new Date()) {
                 const day = new Date(span2.innerText).getDate().toString().length > 1 ? new Date(span2.innerText).getDate() : '0' + new Date(span2.innerText).getDate();
-                const month = new Date(span2.innerText).getMonth().toString().length > 1 ? new Date(span2.innerText).getMonth() : '0' + new Date(span2.innerText).getMonth();
+                const correctMonth = new Date(span2.innerText).getMonth() + 1;
+                const month = correctMonth.toString().length > 1 ? correctMonth.toString() : '0' + correctMonth.toString();
                 span2.innerText = day + '/' + month + '/' + new Date(span2.innerText).getFullYear();
               }
             } else {
